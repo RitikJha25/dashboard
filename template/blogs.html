@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html>
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Akronim|Black+Ops+One|Dancing+Script|Orbitron|Trade+Winds&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Dashboard</title>
+</head>
+<body>
+<div class="template">
+	<div class="brand">
+	  <a href="#" class="active" id="nav-content1">CODE IOT Dashboard</a><br>
+	  <form method="get" class="search-bar">
+		  <div class="search-bar-content">	
+			  <input type="text" name="" placeholder="Search">
+			  <button>search</button>
+		  </div>
+	  </form>
+	</div>
+
+	<div class="vertical-menu">
+
+	  <a href="/login/" id="Home" onclick = "myFunction1()">Login</a><br>
+	  <a href="/signup/" id="Home" onclick = "myFunction2()">Register</a><br>
+	  <a href="#" id="Home" onclick = "myFunction3()">IOT Graphs</a><br>
+	  <a href="dbrecord" id="Home" onclick = "myFunction4()">DB Record</a><br>
+	  <a href="#" id="Home" onclick = "myFunction5()">Our Blogs</a><br>
+	</div>
+</div>
+<div class="template2">
+  <div class="brand-mobile">
+    <a href="#" class="active" id="nav-content1">CODE IOT Dashboard</a><br>
+    <form method="get" class="search-bar">
+      <div class="search-bar-content">  
+        <input type="text" name="" placeholder="Search">
+        <button>search</button>
+      </div>
+    </form>
+  </div>
+  <div class="dropdown-button" id="db"><button class="fa fa-bars" onclick="dropdown()"></button></div>
+    <div class="vertical-menu-mobile" id="db-content">
+
+    <a href="/login/" id="Home" onclick = "myFunction1()">Login</a><br>
+    <a href="/signup/" id="Home" onclick = "myFunction2()">Register</a><br>
+    <a href="#" id="Home" onclick = "myFunction3()">IOT Graphs</a><br>
+    <a href="/dbrecord/" id="Home" onclick = "myFunction4()">DB Record</a><br>
+    <a href="#" id="Home" onclick = "myFunction5()">Our Blogs</a><br>
+  </div>
+</div>
+
+
+
+<div class="container" id="blogs">
+</div>
+<div class="container3" id="">
+    {% if web_list %}
+
+      {% for us in web_list %}
+      <table>
+        <tr>
+        <td>
+          <h2>{{us.Title}}</h2>
+          <img src="{{us.BlogImg.url}}"><br>
+          <p>{{us.Description}}</p>
+
+          </td>
+        </tr>
+      </table>
+      {% endfor %}
+{% endif %}
+	</div>
+
+</div>
+
+   
+
+
+
+                                            
+
+
+                                            <!-- javascript function  --> 
+
+
+
+
+
+<script>
+      function dropdown() {
+      var a = document.getElementById("db");
+      var b = document.getElementById("db-content");
+      var c = document.getElementById("Login");
+      if (b.style.display === "none") {
+        b.style.display = "block";
+        c.style.display = "none"
+      }else {
+    b.style.display = "none";
+    c.style.display = "block"
+
+  }
+    }
+
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,954 @@
+*{
+	margin: 0;
+}
+
+.dropdown-button{
+  display:;
+}
+#db{
+  display: none;
+}
+.template{
+  position:fixed;
+  z-index: 0;
+  display: block;
+}
+.template2{
+  display: none;
+}
+
+  .brand{
+    position: absolute;
+  width: 100vw;
+  height:10vh;
+  background-color: black;
+  }
+  .brand a{
+
+    text-decoration: none;
+    color: white;
+  }
+
+.brand a .active {
+  position: absolute;
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  text-decoration: none;
+  color: white;
+  width: 60vw;
+  height: 10vh;
+  margin-left:;
+}
+
+#nav-content1{
+    float: left;
+    background-color: black;
+    font-size: 2.5em;
+    font-family: 'Orbitron';
+    padding-left:;
+    margin-bottom: %;
+    }
+
+.search-bar{
+  position: absolute;
+  top: 10%;  
+  left:50%;
+  width: 38vw;
+  height:10%;
+  background-color: black;
+  text-align:center;
+  margin-top: ;
+
+}
+
+
+
+.search-bar-content{
+  margin-top: %;
+}
+
+.search-bar-content input{
+  font-size: 1.2em;
+  font-family: 'Orbitron';
+  padding: 2px;
+  border-radius: 6px;
+  
+}
+
+
+.search-bar-content button{
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Orbitron';
+  background-color: black;
+  border-radius: 6px;
+  padding: 4px;
+  border:solid 1px white;
+
+}
+.search-bar-content button:hover{
+  font-size: 1.2em;
+  font-family: 'Orbitron';
+  background-color: #34cfba;
+  color: white;
+
+}
+
+
+/* navigation bar */
+
+
+
+.vertical-menu {
+  position: fixed;
+  display:;
+  width:17em; /* Set a width if you like */
+  height: 100vh;
+  top: 7.6%;
+  text-align: ;
+  background-color: black;
+}
+
+.vertical-menu a {
+  background-color: black; /* Grey background color */
+  color: white; /* Black text color */
+  display: ; /* Make the links appear below each other */
+  font-family: 'Orbitron';
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border:0;
+}
+
+
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+
+#Home{
+float: left;
+text-decoration: none;
+width:;
+color: white;
+width: %;
+margin-top: %;
+font-size: 2.2em;
+border:0;
+background-color: transparent;
+font-family: orbitron;
+margin-bottom: 5%;
+margin-left:%;
+}
+#Home:hover{
+  color: blue;
+}
+
+/* horizontal bar for mobile devices */
+
+
+  .brand-mobile,.brand-mobile a, .brand-mobile .active, .brand-mobile #nav-content1, .brand-mobile .search-bar, .brand-mobile .search-bar-content, .brand-mobile input, .brand-mobile button{
+    display: none;
+  }
+
+
+/*vertical menu mobile */
+
+
+.vertical-menu-mobile{
+  display: none;
+}
+
+
+
+
+                                                          /*  container  */
+
+
+.container{
+    position: absolute;
+    float: right;
+    top: 10%;
+    left:17em;
+    width:76%;
+ 
+    z-index:1 ;
+}
+
+.container1{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 21% ;
+    width:76%;
+ 
+    z-index:1 ;
+}
+
+.containerr{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 25%;
+      background-color: white;
+      text-align: center;
+      border-radius: 16px;
+      transform: translate(-50%, -50%);
+    }
+.container2{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 21% ;
+    width:76%;
+ 
+    z-index:1 ;
+}
+
+.container3{
+    position: absolute;
+    float: right;
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:-1 ;
+}
+.container3 h2{
+  text-transform: uppercase;
+  font-size:2em;
+  font-family: orbitron; 
+}
+.container3 img{
+  width: 90%;
+  height: 60%;
+  padding: 1em;
+}
+.container3 p{
+  text-align: justify;
+  padding: 2em;
+}
+
+.container4{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:1 ;
+}
+
+
+.container5{
+    position: absolute;
+    float: right;
+    margin-top:%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:1 ;
+}
+
+
+#blogs{
+     display: ;
+    }
+
+.blog-img{
+  position: absolute;
+  top:%;
+    width:80.1vw;
+    height:90vh;
+    z-index:0;
+}
+
+    .Signup-title{
+      font-family: orbitron;
+      color: white;
+      width: 100%;
+      background-color: black;
+      padding: 2px 0 2px 0;
+      font-size: 2em;
+      border-radius: 16px 16px 0 0;
+    }
+
+
+
+.containerr input{
+      font-size: 1.5em;
+      margin:10px; 
+      width: %;
+      border-radius: 8px;
+      padding-left: 5px;
+    }
+
+.containerr button{
+      font-size: 1.5rem;
+      margin:1rem;
+      background-color:#2f7bed;
+      color: white;
+      padding: .3em;
+      border-radius: 10px;
+      border:solid black 1px;
+      font-family: orbitron;
+    }
+.containerr button:hover{
+      background-color:  #24d461;
+    }
+
+#redirect{
+      color: #2f7bed;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.1em;
+
+    }
+#redirect:hover{
+      color:  #24d461;
+      font-size: 1.2em;
+    }
+
+
+
+
+
+                                                    /* DBrecord*/
+
+
+
+
+.container4 h1{
+      font-family: orbitron;
+      color: white;
+      text-align: center;
+    }
+.container4 table{
+      width: 90%;
+      z-index: -1;
+      position: all;
+      margin: auto;
+    }
+.container4 tr,.container4 th{
+      background-color: white;
+      color: black;
+      border:solid black 1px;
+    }
+    td{
+      font-size: 1.2em;
+      width:30%;
+      text-align: center;
+      border:solid black 1px;
+    }
+
+.delete{
+      color: red;
+      font-size: 20px;
+      display: ;
+    }
+.delete:hover{
+      display
+    }
+
+
+                                            /* for ipad devices */
+
+@media only screen and (max-width: 900px){
+ *{
+  margin: 0;
+}
+
+#db{
+  display: block;
+}
+
+.template{
+  display: none;
+}
+.template2{
+  position:;
+  z-index:;
+  display: block;
+}
+
+ .template2 .brand-mobile{
+    position: absolute; 
+  width: 100vw;
+  height: 25vh;
+  background-color: black;
+  text-align: center;
+  }
+  .brand-mobile a{
+
+    text-decoration: none;
+    color: white;
+  }
+
+.brand-mobile a .active {
+  font-size:em;
+  text-align: center;
+  background-color: #4CAF50; 
+  text-decoration: none;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+  margin-left:;
+}
+
+.brand-mobile #nav-content1{
+  position: absolute;
+  margin-left:20vw;
+    text-align: center;
+    background-color: black;
+    font-size: 2em;
+    font-family: 'Orbitron';
+    padding-left:;
+    margin-bottom: %;
+    }
+.template2 form{
+  width:60%;
+}
+
+.template2 .search-bar{
+  position: absolute; 
+  margin-top: 1%;
+  transform: translate(-50%, -50%);
+  top: 50%; 
+  left:50%;
+  font-size: 1.2em;
+  width:;
+  height:;
+  background-color: black;
+  text-align:center;
+  margin-top: ;
+
+}
+.template2 .search-bar button{
+  display: none;
+}
+
+
+
+
+
+/* navigation bar */
+
+
+
+.template2 #db-content {
+  position:absolute;
+  background-color: black;
+  display:;
+  top:5.7em;
+  width:15em; /* Set a width if you like */
+  height: 90vh;
+  margin-top: ;
+  z-index:1;
+  text-align: ;
+  background-color: black;
+}
+
+.vertical-menu a {
+  background-color: black; /* Grey background color */
+  color: white; /* Black text color */
+  display: ; /* Make the links appear below each other */
+  font-family: 'Orbitron';
+  padding: 2px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border:0;
+}
+
+
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+
+#Home{
+float:;
+text-decoration: none;
+width:;
+background-color:;
+color: white;
+width: %;
+margin-top: %;
+font-size: 2em;
+border:0;
+background-color: transparent;
+font-family: orbitron;
+margin-bottom: 5%;
+margin-top:;
+margin-left:4%;
+}
+#Home:hover{
+  color: blue;
+}
+
+/* horizontal bar for mobile devices */
+
+
+  .brand-mobile,.brand-mobile a, .brand-mobile .active, .brand-mobile #nav-content1, .brand-mobile .search-bar, .brand-mobile .search-bar-content, .brand-mobile input, .brand-mobile button{
+    display: block;
+  }
+
+
+/*vertical menu mobile */
+
+#db-content{
+  display: none;
+}
+.dropdown-button button{
+  margin: 0.3em;
+  position: absolute;
+  font-size: 3em;
+  color: white;
+  border-radius: 6px;
+  border: solid white 1px;
+  background-color: transparent;  
+}
+
+
+
+.vertical-menu-mobile{
+  display:;
+}
+
+
+
+
+                                                          /*  container  */
+
+
+.container{
+    position: absolute;
+    float: right;
+    top:0%;
+    left:0;
+ 
+    z-index:-1 ;
+}
+
+.container1{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 21% ;
+    width:76%;
+ 
+    z-index:;
+}
+
+.containerr{
+      position: all;
+      width: 80%;
+      margin-left: 40%;
+      margin-top: 50%;
+      margin-bottom: 5%;
+      background-color: white;
+      text-align: center;
+      border-radius: 16px;
+      transform: translate(-50%, -50%);
+    }
+
+.containerr form{
+}
+.containerr input{
+  font-size: 1.2em;
+  width:90%;
+}
+.container2{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:0 ;
+}
+
+.container3{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:0 ;
+}
+
+.container4{
+    position: absolute;
+    float: right;
+    top: 20%;
+    margin-left:2% ;
+    width:98%;
+ 
+    z-index:0 ;
+}
+
+
+.container5{
+    position: absolute;
+    float: right;
+    margin-top:%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:0 ;
+}
+
+
+#blogs{
+     display: ;
+    }
+
+.blog-img{
+  position: absolute;
+  top:%;
+    width:100vw;
+    height:130vh;
+    z-index:-1;
+}
+
+
+
+
+
+
+
+
+
+
+                                                    /* DBrecord*/
+
+
+
+
+.container4 h1{
+    position: absolute;
+    margin-top: -6%;
+    margin-left: 20%;
+    font-size: 2em;
+    text-align: center;
+      font-family: orbitron;
+      color: white;
+      text-align: center;
+    }
+.container4 table{
+  position:;
+  margin-top: 10%;
+      width: 99%;
+      z-index: -1;
+      position: all;
+      margin: auto;
+    }
+
+ 
+}
+
+
+
+
+
+
+                                            /* for mobile devices */
+
+@media only screen and (max-width: 500px){
+ *{
+  margin: 0;
+}
+
+#db{
+  display: block;
+}
+
+.template{
+  display: none;
+}
+.template2{
+  position: fixed;
+  display: block;
+}
+
+ .template2 .brand-mobile{
+    position: absolute; 
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  text-align: center;
+  }
+  .brand-mobile a{
+
+    text-decoration: none;
+    color: white;
+  }
+
+.brand-mobile a .active {
+  font-size:em;
+  text-align: center;
+  background-color: #4CAF50; 
+  text-decoration: none;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+  margin-left:;
+}
+
+.brand-mobile #nav-content1{
+  position: absolute;
+  margin-left:20vw;
+    text-align: center;
+    background-color: black;
+    font-size: 1.3em;
+    font-family: 'Orbitron';
+    padding-left:;
+    margin-bottom: %;
+    }
+.template2 form{
+  width:60%;
+}
+
+.template2 .search-bar{
+  position: absolute; 
+  margin-top: 1%;
+  transform: translate(-50%, -50%);
+  top: 50%; 
+  left:50%;
+  font-size: 0.8em;
+  width:;
+  height:;
+  background-color: black;
+  text-align:center;
+  margin-top: ;
+
+}
+.template2 .search-bar button{
+  display: none;
+}
+
+
+
+
+
+/* navigation bar */
+
+
+
+.template2 #db-content {
+  position:absolute;
+  background-color: black;
+  display:;
+  top:4em;
+  width:12em; /* Set a width if you like */
+  height: 90vh;
+  margin-top: 20%;
+  z-index:1;
+  text-align: ;
+  background-color: black;
+}
+
+.vertical-menu a {
+  background-color: black; /* Grey background color */
+  color: white; /* Black text color */
+  display: ; /* Make the links appear below each other */
+  font-family: 'Orbitron';
+  padding: 2px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border:0;
+}
+
+
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+
+#Home{
+float:;
+text-decoration: none;
+width:;
+background-color:;
+color: white;
+width: %;
+margin-top: %;
+font-size: 1.6em;
+border:0;
+background-color: transparent;
+font-family: orbitron;
+margin-bottom: 5%;
+margin-top: 5%;
+margin-left:10%;
+}
+#Home:hover{
+  color: blue;
+}
+
+/* horizontal bar for mobile devices */
+
+
+  .brand-mobile,.brand-mobile a, .brand-mobile .active, .brand-mobile #nav-content1, .brand-mobile .search-bar, .brand-mobile .search-bar-content, .brand-mobile input, .brand-mobile button{
+    display: block;
+  }
+
+
+/*vertical menu mobile */
+
+#db-content{
+  display: none;
+}
+.dropdown-button button{
+  margin: 0.3em;
+  position: absolute;
+  font-size: 2em;
+  color: white;
+  border-radius: 3px;
+  border: solid white 1px;
+  background-color: transparent;  
+}
+
+
+
+.vertical-menu-mobile{
+  display:;
+}
+
+
+
+
+                                                          /*  container  */
+
+
+.container{
+    position: absolute;
+    float: right;
+    top: 10%;
+    left:0;
+ 
+    z-index:-1 ;
+}
+
+.container1{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 21% ;
+    width:76%;
+ 
+    z-index:0 ;
+}
+
+.containerr{
+      position: absolute;
+      width: 90%;
+      margin-left: 40%;
+      margin-top: 100%;
+      background-color: white;
+      text-align: center;
+      border-radius: 16px;
+      transform: translate(-50%, -50%);
+    }
+.container2{
+    position: absolute;
+    float: right;
+    margin-top: 8%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:0 ;
+}
+
+.container3{
+    position: absolute;
+    margin-top:20%;
+    margin-left:0.5% ;
+    width:99%;
+ 
+    z-index:-1 ;
+}
+
+.container3 h2{
+  text-transform: uppercase;
+  font-size:1em;
+  font-family: orbitron; 
+}
+.container3 img{
+  width: 90%;
+  height: 40%;
+  padding: 1em;
+}
+.container3 p{
+  text-align: justify;
+  padding: 1em;
+}
+.container4{
+    position: absolute;
+    float: right;
+    top: 20%;
+    margin-left:2% ;
+    width:98%;
+ 
+    z-index:0 ;
+}
+
+
+.container5{
+    position: absolute;
+    float: right;
+    margin-top:%;
+    margin-left: 22% ;
+    width:76%;
+ 
+    z-index:1 ;
+}
+
+
+#blogs{
+     display: ;
+    }
+
+.blog-img{
+  position: absolute;
+  top:%;
+    width:100vw;
+    height:90vh;
+    z-index:0;
+}
+
+
+
+
+
+
+
+
+
+
+                                                    /* DBrecord*/
+
+
+
+
+.container4 h1{
+    position: absolute;
+    margin-top: -20%;
+    font-size: 1.7em;
+    text-align: center;
+      font-family: orbitron;
+      color: white;
+      text-align: center;
+    }
+.container4 table{
+  position:;
+  margin-top: 10%;
+      width: 99%;
+      z-index: -1;
+      position: all;
+      margin: auto;
+    }
+
+ 
+}

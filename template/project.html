@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+<head>
+    <style type="text/css">
+      .search_bar{
+        display:block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left:15%;
+  top:30%; 
+  padding: 2em;
+  border: solid Black 1 px;
+
+}
+.userid{
+  background: black;
+  padding: 0.3em;
+  position: absolute;
+  font-size: 1.5em;
+  color:white;
+  margin:1em;
+}
+
+#search{
+  color: black;
+  border: solid black 1px;
+  font-size: 1.5em;
+  border-radius: 7px;
+}
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Black+Ops+One|Dancing+Script|Orbitron|Trade+Winds&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'project.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title></title>
+  <link rel="icon" type="image/x-icon"  href="">
+</head>
+<body>
+  <div class="Home">
+    {% if user_list %}
+  <div class="userid">{{user_list.emailId}}</div>
+  {% else %}
+  {{id_message}}
+  {% endif %}
+      <h1 class="heading" style="color: black;">Code IOT Dashboard</h1>
+      <a class="logout" href="..\login">Logout</button>
+      <div class="container">
+        <nav>
+          <a id="home" onclick="myFunction1()" >Profile</a>
+          <a id="home" onclick="myFunction2()">Paired Devices</a>
+          <a id="home" onclick="myFunction3()" href="#" >Graphs</a>
+          <a id="home" onclick="myFunction4()" href="/tutorials/" >Tutorials</a>
+        </nav>
+      </div>
+      <div class="cover-photo" id="Home">
+        <img src="">
+      </div>
+  </div>
+  
+</div>
+<div class="Tutorials" id="Tutorials">
+  {% if web_list %}
+
+      {% for us in web_list %}
+      <table>
+        <tr>
+        <td>
+          <img src="{{us.Timage.url}}"><br>
+          <a href="{{us.Reference}}" class="fa fa-youtube-play"></a>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>{{us.Title}}</h2>
+          </td>
+        </tr>
+      </table>
+      {% endfor %}
+    {% endif %}
+</div>
+
+
+
+
+
+
+
+
+                                            <!-- javascript function  --> 
+
+
+
+
+
+<script>
+
+
+    function myFunction1() {
+          var a = document.getElementById("Home");
+    var b = document.getElementById("devices");
+    var c = document.getElementById("graphs");
+    var d = document.getElementById("tutorials");
+          if (a.style.display === "none") {
+            a.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+          }
+          else {
+        a.style.display = "none";
+        }
+      }
+
+    function myFunction2() {
+          var a = document.getElementById("Home");
+    var b = document.getElementById("devices");
+    var c = document.getElementById("graphs");
+    var d = document.getElementById("tutorials");
+          if (b.style.display === "none") {
+            b.style.display = "block";
+            a.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+          }
+          else {
+        b.style.display = "block";
+        }
+      }
+
+
+    function myFunction3() {
+          var a = document.getElementById("Home");
+    var b = document.getElementById("devices");
+    var c = document.getElementById("graphs");
+    var d = document.getElementById("tutorials");
+          if (c.style.display === "none") {
+            c.style.display = "block";
+            b.style.display = "none";
+            a.style.display = "none";
+            d.style.display = "none";
+          }
+          else {
+        c.style.display = "none";
+        }
+      }
+
+
+    function myFunction4() {
+          var a = document.getElementById("Home");
+    var b = document.getElementById("devices");
+    var c = document.getElementById("graphs");
+    var d = document.getElementById("tutorials");
+          if (d.style.display === "none") {
+            d.style.display = "block";
+            b.style.display = "none";
+            c.style.display = "none";
+            a.style.display = "none";
+          }
+          else {
+        d.style.display = "none";
+        }
+      }
+
+
+
+
+</script>
+</body>
+</html>
